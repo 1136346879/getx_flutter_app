@@ -77,6 +77,11 @@ class DetailsView extends StatelessWidget {
                   '${country.totalRecovered}',
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                 ),
+                TextButton(
+                    onPressed: () {
+                      Get.back(result: 'djsoidjsoidj');
+                    },
+                    child: Text('back'))
               ],
             )),
           ),

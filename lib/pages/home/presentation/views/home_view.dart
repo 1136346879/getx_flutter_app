@@ -77,7 +77,27 @@ class HomeView extends GetView<HomeController> {
                       "Fetch by country",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                  )
+                  ),
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      textStyle: const TextStyle(color: Colors.black),
+                      side: const BorderSide(
+                        color: Colors.deepPurple,
+                        width: 3,
+                      ),
+                      shape: const StadiumBorder(),
+                    ),
+                    onPressed: () {
+                      Get.updateLocale(const Locale('pt', 'BR'));
+                    },
+                    child: const Text(
+                      'Update language to Portuguese',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
                 ],
               );
             },
